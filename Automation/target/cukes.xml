@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="0.281203">
+<testcase classname="Application login" name="Home page default login" time="0.257333">
+<system-out><![CDATA[Given User is on landing page...............................................passed
+When User login into applicaion with username "kiran" and password "pass"...passed
+Then Home page is displayed.................................................passed
+And logo is displayed.......................................................passed
+And Title is displayed "true"...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application login" name="Home page login failed" time="0.001773">
+<system-out><![CDATA[Given User is on landing page...............................................passed
+When User login into applicaion with username "kiran" and password "pass"...passed
+Then Home page should not be displayed......................................passed
+But error message should be displayed.......................................passed
+And Title is displayed "false"..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application login" name="User sign up" time="0.003823">
+<system-out><![CDATA[Given User is on landing page...............................................passed
+When User clicks on signup button...........................................passed
+And user enter the details..................................................passed
+Then user account should be created.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application login" name="User loain" time="0.008688">
+<system-out><![CDATA[Given User is on landing page...............................................passed
+When User login into applicaion with usernames user1 and passwords pass1....passed
+Then Home page is displayed.................................................passed
+And logo is displayed.......................................................passed
+And Title is displayed "true"...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application login" name="User loain 2" time="0.001516">
+<system-out><![CDATA[Given User is on landing page...............................................passed
+When User login into applicaion with usernames user2 and passwords pass2....passed
+Then Home page is displayed.................................................passed
+And logo is displayed.......................................................passed
+And Title is displayed "true"...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application login" name="User loain 3" time="0.00807">
+<system-out><![CDATA[Given User is on landing page...............................................passed
+When User login into applicaion with usernames user3 and passwords pass3....passed
+Then Home page is displayed.................................................passed
+And logo is displayed.......................................................passed
+And Title is displayed "true"...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

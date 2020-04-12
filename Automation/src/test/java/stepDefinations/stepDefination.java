@@ -12,16 +12,31 @@ import cucumber.api.java.en.When;
 
 public class stepDefination {
 
-	
+    @Given("^Browser is given$")
+    public void browser_is_given() {
+    	System.out.println("Broser is given");
+    }
+
+    @Then("^Browser is triggered$")
+    public void browser_is_triggered() {
+    	System.out.println("Browser is triggered");
+    }
+
+    @Then("^browser is displayed$")
+    public void browser_is_displayed() {
+    	System.out.println("browser is displayed");
+    }
 	@Given("^User is on landing page$")
 	public void user_is_on_landing_page()
 	{
 		System.out.println("User is on landing page");
 	}
-    @When("^User login into applicaion with username\"([^\"]*)\" and password \"([^\"]*)\"$")
-    public void user_login_into_applicaion_with_usernamesomething_and_password_something(String strArg1, String strArg2)  {
-       
-    }
+	@When("^User login into applicaion with username \"([^\"]*)\" and password \"([^\"]*)\"$")
+	public void user_login_into_applicaion_with_username_and_password(String arg1, String arg2) {
+		System.out.println(arg1);
+		System.out.println(arg2);
+		
+	}
     
 	@Then("^Home page is displayed$")
 	public void Naviated_homepage()
@@ -78,7 +93,11 @@ public class stepDefination {
     	System.out.println(obj.get(0).get(2));
     	System.out.println(obj.get(0).get(3));
     }
-    
+    @When("^User login into applicaion with usernames (.+) and passwords (.+)$")
+    public void user_login_into_applicaion_with_usernames_and_passwords(String username, String password)
+    {
+    	System.out.println(username+" "+ password);
+    }
 
 
 }

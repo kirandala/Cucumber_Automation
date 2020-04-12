@@ -1,0 +1,691 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 346960,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openbrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Home page default login",
+        "description": "",
+        "id": "application-login;home-page-default-login",
+        "after": [
+          {
+            "result": {
+              "duration": 30702,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 241038452,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on landing page",
+            "match": {
+              "location": "stepDefination.user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8218013,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User login into applicaion with username \"kiran\" and password \"pass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kiran",
+                  "offset": 42
+                },
+                {
+                  "val": "pass",
+                  "offset": 63
+                }
+              ],
+              "location": "stepDefination.user_login_into_applicaion_with_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7330971,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Home page is displayed",
+            "match": {
+              "location": "stepDefination.Naviated_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 227872,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "logo is displayed",
+            "match": {
+              "location": "stepDefination.logo_validation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140125,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Title is displayed \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.title_is_displayed_something(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 234060,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeValidation()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Home page login failed",
+        "description": "",
+        "id": "application-login;home-page-login-failed",
+        "after": [
+          {
+            "result": {
+              "duration": 24383,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterrun()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 407179,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on landing page",
+            "match": {
+              "location": "stepDefination.user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 382315,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User login into applicaion with username \"kiran\" and password \"pass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kiran",
+                  "offset": 42
+                },
+                {
+                  "val": "pass",
+                  "offset": 63
+                }
+              ],
+              "location": "stepDefination.user_login_into_applicaion_with_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89438,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Home page should not be displayed",
+            "match": {
+              "location": "stepDefination.home_page_should_not_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 505221,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "error message should be displayed",
+            "match": {
+              "location": "stepDefination.error_message_should_be_displayed()"
+            },
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 130167,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Title is displayed \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "false",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.title_is_displayed_something(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1194631,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeValidation()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User sign up",
+        "description": "",
+        "id": "application-login;user-sign-up",
+        "after": [
+          {
+            "result": {
+              "duration": 12333,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterrun()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 216253,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is on landing page",
+            "match": {
+              "location": "stepDefination.user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29678,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User clicks on signup button",
+            "match": {
+              "location": "stepDefination.user_clicks_on_signup_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2293558,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enter the details",
+            "match": {
+              "location": "stepDefination.user_enter_the_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "kiran",
+                  "detail 1",
+                  "detail 2",
+                  "details 3"
+                ],
+                "line": 24
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76866,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user account should be created",
+            "match": {
+              "location": "stepDefination.user_account_should_be_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 139381,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openbrowser()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "User loain",
+        "description": "",
+        "id": "application-login;user-loain;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 20541,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 91380,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User is on landing page",
+            "match": {
+              "location": "stepDefination.user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 204830,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User login into applicaion with usernames user1 and passwords pass1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user1",
+                  "offset": 42
+                },
+                {
+                  "val": "pass1",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefination.user_login_into_applicaion_with_usernames_and_passwords(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 178118,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Home page is displayed",
+            "match": {
+              "location": "stepDefination.Naviated_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7070615,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "logo is displayed",
+            "match": {
+              "location": "stepDefination.logo_validation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 983026,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Title is displayed \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.title_is_displayed_something(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 94828,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openbrowser()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "User loain",
+        "description": "",
+        "id": "application-login;user-loain;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 16506,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 194942,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User is on landing page",
+            "match": {
+              "location": "stepDefination.user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 824353,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User login into applicaion with usernames user2 and passwords pass2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user2",
+                  "offset": 42
+                },
+                {
+                  "val": "pass2",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefination.user_login_into_applicaion_with_usernames_and_passwords(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186634,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Home page is displayed",
+            "match": {
+              "location": "stepDefination.Naviated_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 64394,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "logo is displayed",
+            "match": {
+              "location": "stepDefination.logo_validation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134391,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Title is displayed \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.title_is_displayed_something(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2411330,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openbrowser()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "User loain",
+        "description": "",
+        "id": "application-login;user-loain;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 14172,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 83745,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User is on landing page",
+            "match": {
+              "location": "stepDefination.user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4688231,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User login into applicaion with usernames user3 and passwords pass3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user3",
+                  "offset": 42
+                },
+                {
+                  "val": "pass3",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefination.user_login_into_applicaion_with_usernames_and_passwords(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 179294,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Home page is displayed",
+            "match": {
+              "location": "stepDefination.Naviated_homepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 70155,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "logo is displayed",
+            "match": {
+              "location": "stepDefination.logo_validation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 623550,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Title is displayed \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "true",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefination.title_is_displayed_something(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Application login",
+    "description": "",
+    "id": "application-login",
+    "keyword": "Feature",
+    "uri": "loginduplicate.feature"
+  }
+]
